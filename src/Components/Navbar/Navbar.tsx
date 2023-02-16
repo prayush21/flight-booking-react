@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { SiConsul } from "react-icons/si";
 import { BsPhoneVibrate } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
-
+import topGunLogo from "../../assets/topGun.png";
 import bluePlaneLogo from "../../assets/bluePlaneLogo.png";
 
 const Navbar = () => {
+  const [active, setActive] = useState("");
+
+  const showNavbar = () => {
+    setActive("navBarMenu showNavBar");
+  };
+
+  const removeNavbar = () => {
+    setActive("navBarMenu");
+  };
+
   return (
     <div className="navBar flex">
       <div className="navBarOne flex">
@@ -35,23 +45,23 @@ const Navbar = () => {
 
       <div className="navBarTwo flex">
         <div className="logoDiv">
-          <img src={bluePlaneLogo} alt="logo" className="logo" />
+          <img src={topGunLogo} alt="logo" className="logo" />
         </div>
-        <div className="navBarMenu">
-          <ul className="menu flex">
+        <div className={active}>
+          <ul className="menu flex" onClick={removeNavbar}>
             <li className="listItem">Home</li>
             <li className="listItem">About</li>
             <li className="listItem">Offers</li>
             <li className="listItem">Seats</li>
             <li className="listItem">Destinations</li>
           </ul>
+          <button className="btn flex btnOne">Contact</button>
         </div>
 
-        <button className="btn flex btnOne">Contacts</button>
-        {/* <button className="btn flex btnTwo">Contacts</button> */}
+        <button className="btn flex btnTwo">Contact</button>
 
         <div className="toggleIcon">
-          <CgMenuGridO />
+          <CgMenuGridO onClick={showNavbar} className="icon" />
         </div>
       </div>
     </div>
