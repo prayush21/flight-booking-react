@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { SiConsul } from "react-icons/si";
 import { BsPhoneVibrate } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
@@ -8,6 +8,7 @@ import bluePlaneLogo from "../../assets/bluePlaneLogo.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
+  const [navBarBg, setNavbarBg] = useState("");
 
   const showNavbar = () => {
     setActive("navBarMenu showNavBar");
@@ -16,6 +17,21 @@ const Navbar = () => {
   const removeNavbar = () => {
     setActive("navBarMenu");
   };
+
+  useEffect(() => {
+    const addBgColor = () => {
+      if (window.scrollY >= 10) {
+        setNavbarBg("navBarTwo navBarWithBg");
+      } else {
+        setNavbarBg("navBarTwo");
+      }
+    };
+
+    window.addEventListener("scroll", addBgColor);
+    return () => {
+      window.removeEventListener("scroll", addBgColor);
+    };
+  }, []);
 
   return (
     <div className="navBar flex">
@@ -43,7 +59,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="navBarTwo flex">
+      <div className={`${navBarBg} flex`}>
         <div className="logoDiv">
           <img src={topGunLogo} alt="logo" className="logo" />
         </div>

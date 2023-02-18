@@ -76,6 +76,7 @@ li{
     background: var(--PrimaryColor);
     border-radius: 3rem;
     color: var(--whiteColor);
+    cursor: pointer;
 
     a{
         color: var(--whiteColor);
@@ -235,5 +236,133 @@ h2{
             }
         }
         
+    }
+
+    .navBarWithBg{
+        background-color: var(--SecondaryColor);
+        padding: 0.5rem 1rem;
+        box-shadow: rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px;
+    }
+}
+
+///Home Component Styling
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+    // background-image: url('./assets/planeImage.jpeg');
+    // background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .mainText{
+        color: var(--blackColor);
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 2.5rem;
+    }
+
+    .homeImages{
+        width: 100%;
+        margin: 1rem auto 0;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 5rem;
+
+
+        .videoDiv{
+            width: 900px;
+            aspect-ratio: 0.75;
+            transition: 10s;
+            .video{
+                border-radius: 10rem;
+            }
+
+
+        }
+    }
+}
+
+//Search Component Styling
+.search{
+    .sectionContainer{
+        width: 100%;
+        padding: 1.5rem;
+        border: 2px solid var(--greyBg);
+        border-radius: 16px;
+        row-gap: 2rem;
+    }
+
+    .btns{
+        background: var(--SecondaryColor);
+        padding: .5rem;
+        border-radius: 1rem;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+
+        .singleBtn{
+            padding: .8rem 1.5rem;
+            font-size: 13px;
+            border-radius: 3rem;
+            width: 80%;
+            text-align: center;
+
+            &:hover{
+                background-color: var(--PrimaryColor);
+                color: var(--whiteColor);
+                font-weight: 500;
+                transition: .4s ease;
+            }
+        }
+
+        .active{
+            background-color: var(--PrimaryColor);
+            color: var(--whiteColor);
+            font-weight: 500;
+        }
+    }
+
+    .searchInputs{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .singleInput{
+            .iconDiv{
+                background: var(--SecondaryColor);
+                padding: 16px 10px;
+                border-radius: 3rem;
+                margin-right: 1rem;
+            }
+
+            .icon{
+                color: var(--blackColor);
+                opacity: .7;
+            }
+
+            .texts{
+                h4{
+                    padding-top: 0;
+                    padding-bottom: .7rem;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                input{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+
+                    &::placeholder{
+                        font-size: 14px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
     }
 }
