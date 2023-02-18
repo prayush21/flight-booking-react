@@ -306,4 +306,41 @@ h2 {
   opacity: 0.5;
 }
 
+.support .sectionContainer .titlesDiv {
+  text-align: center;
+}
+.support .sectionContainer .titlesDiv small {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.5rem;
+  color: var(--blackColor);
+}
+.support .sectionContainer .infoDiv {
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv {
+  gap: 1.5rem;
+}
+.support .sectionContainer .infoDiv .textDiv .number {
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 3rem;
+  padding: 5px 12px;
+  text-align: center;
+}
+.support .sectionContainer .infoDiv .textDiv .colorOne {
+  background-color: var(--colorOne);
+}
+.support .sectionContainer .infoDiv .textDiv .colorTwo {
+  background-color: var(--colorTwo);
+}
+.support .sectionContainer .infoDiv .imgDiv img {
+  width: 100%;
+  max-width: 480px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -366,3 +366,58 @@ h2{
         }
     }
 }
+
+//Support Component Styling
+.support{
+    .sectionContainer{
+        .titlesDiv{
+            text-align: center;
+            small{
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                line-height: 1.5rem;
+                color: var(--blackColor);
+            }
+        }
+
+        .infoDiv{            
+            
+            margin-top: 2rem;
+            gap: 1.5rem;
+
+            .textDiv{                
+                gap: 1.5rem;
+
+                .number{
+                    background-color: var(--PrimaryColor);
+                    color: var(--whiteColor);
+                    font-weight: 700;
+                    font-size: 13px;
+                    border-radius: 3rem;
+                    padding: 5px 12px;
+                    text-align: center;
+                }
+
+                .colorOne{
+                    background-color: var(--colorOne);
+                }
+
+                .colorTwo{
+                    background-color: var(--colorTwo);
+                }
+            }
+
+            .imgDiv{
+                img{
+                    width: 100%;
+                    max-width: 480px;
+                }
+            }
+        }
+
+
+
+    }
+    
+}
