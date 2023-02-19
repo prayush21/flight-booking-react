@@ -20,6 +20,7 @@ const App = () => {
       <Lounge />
       <Travelers />
       <Subscribe />
+      <Footer />
     </div>
   );
 };

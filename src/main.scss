@@ -661,3 +661,74 @@ h2{
     }
 
 }
+
+//Footer Component Styling
+.footer{
+    background: var(--SecondaryColor);
+    .sectionContainer{
+        gap: 2.5rem;
+
+        .gridOne{
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv{
+                width: 20%;
+            }
+
+            .socialIcon{
+                margin-top: 1rem;
+                gap: 1rem;
+
+                .icon{
+                    height: 40px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--borderColor);
+                    box-shadow: var(--boxShadow);
+                    padding: .1rem;
+                    // color: var(--greyText);
+
+                    &:hover{                        
+                        background: var(--PrimaryColor);
+                        color: var(--whiteColor);
+                        transition: var(--transition);                        
+                    }
+                }
+            }
+        }
+
+        .footerLinks{
+            display: grid;
+
+            .linkTitle{
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+
+            li a{
+                display: block;
+                color: gray;
+                transition: var(--transition);
+                padding: .3rem;
+                &:hover{
+                    color: var(--PrimaryColor);
+                    transform: translateX(7px);
+                }
+            }
+        }
+        
+    }
+
+    .copyRightDiv{
+        justify-content: center;
+        margin-top: 1.5rem;
+        border-top: 1px solid var(--greyText);
+        text-align: center;
+    }
+
+    
+}
