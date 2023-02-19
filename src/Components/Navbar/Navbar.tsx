@@ -7,7 +7,7 @@ import topGunLogo from "../../assets/topGun.png";
 import bluePlaneLogo from "../../assets/bluePlaneLogo.png";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState("navBarMenu");
   const [navBarBg, setNavbarBg] = useState("");
 
   const showNavbar = () => {

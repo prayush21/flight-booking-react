@@ -234,7 +234,6 @@ h2 {
 }
 .home .homeImages .videoDiv {
   width: 900px;
-  aspect-ratio: 0.75;
   transition: 10s;
 }
 .home .homeImages .videoDiv .video {
