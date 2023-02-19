@@ -8,7 +8,7 @@ import bluePlaneLogo from "../../assets/bluePlaneLogo.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("navBarMenu");
-  const [navBarBg, setNavbarBg] = useState("");
+  const [navBarBg, setNavbarBg] = useState("navBarTwo");
 
   const showNavbar = () => {
     setActive("navBarMenu showNavBar");
