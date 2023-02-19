@@ -10,7 +10,7 @@
   --PrimaryColor: hsl(225, 50%, 48%);
   --SecondaryColor: hsl(180, 17%, 95%);
   --colorOne: hsl(15, 74%, 70%);
-  --colorTwo: hsl(15, 74%, 70%);
+  --colorTwo: hsl(15, 45%, 53%);
   --HoverColor: hsl(225, 56%, 59%);
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 12%);
@@ -341,6 +341,51 @@ h2 {
 .support .sectionContainer .infoDiv .imgDiv img {
   width: 100%;
   max-width: 480px;
+}
+
+.info {
+  background: var(--SecondaryColor);
+}
+.info .titleDiv {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.info .cardsDiv {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.info .cardsDiv .singleCard {
+  background: var(--whiteColor);
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  border-radius: 10rem;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+.info .cardsDiv .iconDiv {
+  justify-content: center;
+  margin: auto;
+  background: var(--PrimaryColor);
+  padding: 1rem;
+  border-radius: 100%;
+}
+.info .cardsDiv .iconDiv .icon {
+  color: var(--whiteColor);
+}
+.info .cardsDiv .cardTitle {
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.info .cardsDiv .colorOne {
+  background-color: var(--colorOne);
+}
+.info .cardsDiv .colorTwo {
+  background-color: var(--colorTwo);
 }
 
 /*# sourceMappingURL=main.css.map */

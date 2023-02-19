@@ -12,7 +12,7 @@
     --PrimaryColor: hsl(225, 50%, 48%);
     --SecondaryColor: hsl(180, 17%, 95%);
     --colorOne: hsl(15, 74%, 70%);
-    --colorTwo: hsl(15, 74%, 70%);
+    --colorTwo: hsl(15, 45%, 53%);
     --HoverColor: hsl(225, 56%, 59%);
     --whiteColor: hsl(0, 0%, 100%);
     --blackColor: hsl(0, 0%, 12%);
@@ -382,7 +382,7 @@ h2{
         }
 
         .infoDiv{            
-            
+
             margin-top: 2rem;
             gap: 1.5rem;
 
@@ -420,4 +420,59 @@ h2{
 
     }
     
+}
+
+
+//Info Component Styling
+.info{
+    background: var(--SecondaryColor);
+
+    .titleDiv{
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        justify-content: space-between;
+    }
+
+    .cardsDiv{
+        gap: 1.5rem;
+        margin-top: 3rem;
+
+        .singleCard{
+            background: var(--whiteColor);
+            text-align: center;
+            padding: 3rem 2rem;
+            gap: 1rem;
+            border-radius: 10rem;
+            margin: auto;
+            height: 320px;
+            width: 90%;
+            max-width: 250px;
+        }
+
+        .iconDiv{
+            justify-content: center;
+            margin: auto;
+            background: var(--PrimaryColor); 
+            padding: 1rem;  
+            border-radius: 100%;
+
+            .icon{
+                color: var(--whiteColor);
+            }
+        }
+
+        .cardTitle{
+            color: var(--blackColor);
+            font-weight: 700;
+        }
+
+        .colorOne{
+            background-color: var(--colorOne);
+        }
+
+        .colorTwo{
+            background-color: var(--colorTwo);
+        }
+    }
 }

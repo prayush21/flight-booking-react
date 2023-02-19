@@ -16,6 +16,7 @@ const App = () => {
       <Home />
       <Search />
       <Support />
+      <Info />
     </div>
   );
 };
