@@ -388,4 +388,26 @@ h2 {
   background-color: var(--colorTwo);
 }
 
+.lounge .sectionContainer {
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto 10px;
+}
+.lounge .sectionContainer .imgDiv img {
+  width: 100%;
+  max-width: 500px;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
 /*# sourceMappingURL=main.css.map */
