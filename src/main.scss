@@ -508,3 +508,156 @@ h2{
         }
     }
 }
+
+//travelers Component Styling
+.travelers{
+    .sectionContainer{
+        text-align: center;
+
+        .travelersContainer{
+            margin-top: 1rem;
+            gap: 1.5rem;
+
+            .singleTraveler{
+                position: relative;
+                height: 380px;
+                width: 85%;
+                max-width: 250px;
+                overflow: hidden;
+                border-radius: 10rem;
+                gap: 1rem;
+                margin: auto;
+
+                .destinationImage, .travelerPic, .travelerName{
+                    position: absolute;
+                }
+
+                .destinationImage{
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                }
+
+                .travelerPic{
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: var(--transition);
+                    animation: animated 2.3s infinite;
+
+                    @keyframes animated
+                     {
+                        0%{
+                            transform: translateX(-50%) translateY(0px);
+                        }
+
+                        50%{
+                            transform: translateX(-50%) translateY(8px);
+                        }
+
+                        100%{
+                            transform: translateX(-50%) translateY(0px);
+                        }
+                    }
+
+                    img{
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 100%;
+                        border: 5px solid rgba(225,225,225,0.637);
+                    }
+                }
+
+                .travelerName{
+                    bottom: -100%;
+                    width: 100%;
+                    height: max-content;
+                    background: var(--whiteColor);
+                    padding: 1.5rem 1rem;
+                    transition: var(--transition);
+                    animation: animatedBorders 2.3s infinite;
+
+                    span{
+                        display: block;
+                        font-weight: 700;
+                        color: black;
+                    }
+
+                    p{
+                        color: var(--PrimaryColor);
+                        font-style: italic;
+                    }
+
+                    @keyframes animatedBorders
+                     {
+                        0%{
+                            border-radius: 0rem;
+                        }
+                        50%{
+                            border-radius: 3rem;
+                        }
+
+                        100%{
+                            border-radius: 0rem;
+                            
+                        }
+                    }
+                }
+
+                &:hover{
+                    .travelerName{
+                        bottom: 0;
+                        transition: 1s ease-in-out;
+                    }
+
+                    .travelerPic{
+                        bottom: 110px;
+                        transition: 1s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+//Subscribe Component Styling
+.subscribe{
+    background-color: var(--SecondaryColor);
+    .sectionContainer{
+        text-align: center;
+        .inputDiv{
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            background-color: var(--whiteColor);
+            padding: .5rem;
+
+            input{
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem .5rem;
+
+                &::placeholder{
+                    color: var(--blackColor);
+                    opacity: 0.5;                
+                }                
+            }
+
+            .btn{
+                width: 100%;
+            }
+        }    
+    }
+
+}
