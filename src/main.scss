@@ -731,3 +731,150 @@ h2{
 
     
 }
+
+//Media Screen Styling------------------>
+@media screen and (min-width: 480px) {
+    //Home Section Styling===============>
+    .home{
+        padding-top: 12rem;
+    }
+
+     //Search Section Styling =============
+     .search{
+        .sectionContainer{
+            .searchInputs{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+     }
+
+     //Travel Section Styling =============
+     .travelers{
+        .sectionContainer{
+            .travelersContainer{
+                grid-template-columns: repeat(2,1fr);
+                place-self: center;
+
+            }
+        }
+     }
+
+     //Subscribe Section Styling =============
+     .subscribe{
+        .sectionContainer{
+            max-width: 60%;
+            margin: auto;
+
+            .inputDiv{
+                flex-direction: row;
+                padding: 0 1rem;
+                border-radius: 3rem;
+                justify-content: space-between;
+                .btn{
+                    width: 40%;
+                }
+
+            }
+        }
+     }
+
+     //Subscribe Section Styling =============
+     .footer{
+        .sectionContainer{
+            // align-items: center;
+            grid-template-columns: repeat(2,1fr);
+            .gridOne{justify-items: center;}
+            .footerLinks{justify-content: center;}
+        }
+     }
+
+}
+
+@media screen and (min-width: 570px) {
+    .home{
+        .mainText{
+            width: 80%;
+        }
+
+        .homeImages{
+            .video{
+               border-radius: 15rem;
+
+            }
+        }
+    }
+    //Search Component Styling
+    .search{
+        .sectionContainer{
+            .btns{
+                border-radius: 3rem;
+                flex-direction: row;
+            }            
+        }
+     }
+
+     //Support Component Styling
+     .support{
+        .sectionContainer{
+            .infoDiv{
+                .textDiv{
+                    margin-top: 3rem;
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+        }
+     }
+     //Info Component Styling
+     .info{
+        .infoContainer{
+            .titleDiv{
+                flex-direction: row;
+                h2{
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+
+            .cardsDiv{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+     }
+     //Lounge Component Styling
+     .lounge{
+        .sectionContainer{
+            .textDiv{
+                .grids{
+                    grid-template-columns: repeat((2,1fr));
+                }
+            }
+        }
+     }
+
+     //Subscribe Component Styling
+     .subscribe{
+        background-color: var(--SecondaryColor);
+        .sectionContainer{
+            text-align: center;
+            .inputDiv{
+                justify-content: space-between;
+                
+                .btn{
+                    width: max-content;
+                }
+            }    
+        }
+    }
+
+     //Footer Component Styling
+    .footer{
+        .sectionContainer{
+            // align-items: center;
+            padding-top: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            .gridOne{justify-items: center;}
+            .footerLinks{justify-content: center;}
+        }
+     }
+}
