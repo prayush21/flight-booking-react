@@ -9,13 +9,13 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
 
   return (
     <div className="home flex container">
       <div className="mainText">
-        <h1 data-aos="fade-up" data-aos-duration="2500">
+        <h1 data-aos="fade-up" data-aos-duration="800">
           Create Ever-lasting Memories With Us
         </h1>
       </div>

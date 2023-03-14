@@ -11,13 +11,13 @@ import "aos/dist/aos.css";
 
 const Footer = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
   return (
     <div className="footer">
       <div
         data-aos="fade-up"
-        data-aos-duration="2500"
+        data-aos-duration="800"
         className="sectionContainer container grid"
       >
         <div className="gridOne grid">

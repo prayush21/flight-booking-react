@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 const Travelers = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
 
   const travelersArray = [
@@ -41,13 +41,13 @@ const Travelers = () => {
   return (
     <div className="travelers section container">
       <div className="sectionContainer">
-        <h2 data-aos="fade-down" data-aos-duration="2500">
+        <h2 data-aos="fade-down" data-aos-duration="800">
           Top Travelers of this month!
         </h2>
 
         <div
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="800"
           className="travelersContainer grid"
         >
           {travelersArray.map(

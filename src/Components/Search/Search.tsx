@@ -7,14 +7,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 const Search = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
 
   return (
     <div className="search container section">
       <div
         data-aos="fade-up"
-        data-aos-duration="2500"
+        data-aos-duration="800"
         className="sectionContainer grid"
       >
         <div className="btns flex">
@@ -33,7 +33,7 @@ const Search = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="800"
           className="searchInputs flex"
         >
           <div className="singleInput flex">

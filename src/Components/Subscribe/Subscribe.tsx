@@ -4,13 +4,13 @@ import "aos/dist/aos.css";
 
 const Subscribe = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
   return (
     <div className="subscribe section">
       <div
         data-aos="fade-up"
-        data-aos-duration="2500"
+        data-aos-duration="800"
         className="sectionContainer container"
       >
         <h2>Subscribe NewsLetters & Get Latest Travel Updates</h2>

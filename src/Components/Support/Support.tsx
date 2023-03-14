@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 const Support = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
 
   return (
@@ -23,7 +23,7 @@ const Support = () => {
           <div className="textDiv grid">
             <div
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="800"
               className="singleInfo"
             >
               <span className="number">01</span>
@@ -36,7 +36,7 @@ const Support = () => {
 
             <div
               data-aos="fade-down"
-              data-aos-duration="2000"
+              data-aos-duration="800"
               className="singleInfo"
             >
               <span className="number colorOne">02</span>
@@ -50,7 +50,7 @@ const Support = () => {
 
             <div
               data-aos="fade-down"
-              data-aos-duration="1500"
+              data-aos-duration="800"
               className="singleInfo"
             >
               <span className="number colorTwo ">03</span>
@@ -63,7 +63,7 @@ const Support = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
+          <div data-aos="fade-left" data-aos-duration="800" className="imgDiv">
             <img src={collage} alt="" />
           </div>
         </div>

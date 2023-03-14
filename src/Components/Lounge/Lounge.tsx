@@ -5,22 +5,22 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 const Lounge = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
 
   return (
     <div className="lounge container section">
       <div className="sectionContainer grid">
-        <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
+        <div data-aos="fade-left" data-aos-duration="800" className="imgDiv">
           <img src={collage} alt="lounge images" />
         </div>
 
-        <div data-aos="fade-down" data-aos-duration="2500" className="textDiv">
+        <div data-aos="fade-down" data-aos-duration="800" className="textDiv">
           <h2>Unaccompanied Minor Lounge</h2>
           <div className="grids grid">
             <div
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="800"
               className="singleGrid"
             >
               <div className="gridTitle">Help through the airport</div>
@@ -32,7 +32,7 @@ const Lounge = () => {
 
             <div
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="800"
               className="singleGrid"
             >
               <div className="gridTitle">Priority Boarding</div>
@@ -44,7 +44,7 @@ const Lounge = () => {
 
             <div
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="800"
               className="singleGrid"
             >
               <div className="gridTitle">Care on the flight</div>
@@ -56,7 +56,7 @@ const Lounge = () => {
 
             <div
               data-aos="fade-down"
-              data-aos-duration="2500"
+              data-aos-duration="800"
               className="singleGrid"
             >
               <div className="gridTitle">Chauffeur Drive Service</div>

@@ -12,6 +12,7 @@ import Info from "./Components/Info/Info";
 const App = () => {
   return (
     <div>
+      <div className="progress-bar"></div>
       <Navbar />
       <Home />
       <Search />

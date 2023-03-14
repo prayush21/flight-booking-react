@@ -6,16 +6,16 @@ import "aos/dist/aos.css";
 
 const Info = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   });
   return (
     <div className="info section">
       <div className="infoContainer container">
         <div className="titleDiv flex">
-          <h2 data-aos="fade-right" data-aos-duration="2500">
+          <h2 data-aos="fade-right" data-aos-duration="800">
             Travel to make memories around the world
           </h2>
-          <button data-aos="fade-" data-aos-duration="2500" className="btn">
+          <button data-aos="fade-" data-aos-duration="800" className="btn">
             View All
           </button>
         </div>
@@ -23,7 +23,7 @@ const Info = () => {
         <div className="cardsDiv grid">
           <div
             data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="800"
             className="singleCard grid"
           >
             <div className="iconDiv flex">
@@ -38,7 +38,7 @@ const Info = () => {
 
           <div
             data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="800"
             className="singleCard grid"
           >
             <div className="iconDiv flex colorOne">
@@ -53,7 +53,7 @@ const Info = () => {
 
           <div
             data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="800"
             className="singleCard grid"
           >
             <div className="iconDiv flex colorTwo">
